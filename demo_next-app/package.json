@@ -1,13 +1,12 @@
 {
-  "name": "nextjs-practice",
+  "name": "demo_next-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "start-fake-server": "json-server --watch db.json -p 4000"
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "19.0.0-rc-66855b96-20241106",
