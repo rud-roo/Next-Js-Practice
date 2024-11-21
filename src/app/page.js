@@ -1,13 +1,30 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import GridLayout from "./components/GridLayout";
 
-export default function Home() {
-  console.log("I am root page")
-  return (
-    <div className={styles.page}>
-      <main>
-        <h2>Hello Next 15</h2>
-      </main>
-    </div>
-  );
-}
+const Shop = async () => {
+
+	return (
+		<div>
+			<div className="page-banner">
+				<div className="page-banner__details">
+					<div className="page-banner__details__title">
+						<h1>Our E-commerce Website</h1>
+					</div>
+				</div>
+			</div>
+			<div className="section">
+				<div className="container">
+					<div className="section__head">
+						<div className="product__details__title">
+							<h2>All Products</h2>
+						</div>
+					</div>
+					<div className="section__content">
+						<GridLayout />
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default Shop;

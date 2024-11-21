@@ -1,17 +1,18 @@
-"use-client"
+"use client";
 
-const { useState } = require("react")
+import { useState } from "react";
 
 const TodoList = () => {
-  console.log("I am todolist")
-  const [todoTitle, setTodoTitle] = useState("");
+  const [todoTitle, setTodoTitle] = useState("")
 
   return (
     <div>
-      <form >
-        <input type="text" value={todoTitle} />
-        <button type="submit">CreateTodo</button>
+      <form>
+        <input type="text" value={todoTitle}/>
+        <button type="submit">Create Todo</button>
       </form>
     </div>
   )
 }
+
+export default TodoList;
