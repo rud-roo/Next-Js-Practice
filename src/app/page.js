@@ -1,7 +1,7 @@
-import GridLayout from "./components/GridLayout";
+import GridLayout from "@/components/GridLayout";
 
 const Shop = async () => {
-
+	// throw new Error("shop error");
 	return (
 		<div>
 			<div className="page-banner">
