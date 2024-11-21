@@ -1,12 +1,6 @@
-import next from "next";
-import ProductCard from "./components/ProductCard";
-import { revalidatePath } from "next/cache";
+import GridLayout from "./components/GridLayout";
 
 const Shop = async () => {
-  const res = await fetch(`http://localhost:4000/products`, {
-    next: {revalidate: 15}
-  });
-  const products = await res.json();
 
 	return (
 		<div>
@@ -25,14 +19,7 @@ const Shop = async () => {
 						</div>
 					</div>
 					<div className="section__content">
-						<div className="grid three">
-              {products.map((product) => (
-                <ProductCard 
-                  key={product.id}
-                  product={product}
-                />
-              ))}
-            </div>
+						<GridLayout />
 					</div>
 				</div>
 			</div>
